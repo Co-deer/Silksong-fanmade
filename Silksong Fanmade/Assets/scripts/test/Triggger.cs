@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class Triggger : MonoBehaviour
 {
-    [SerializeField] ParticleSystem collectParticle = null;
+    
+    [SerializeField] raycaster rayw; 
+
     void Update()
     {
        if (Input.GetKeyDown(KeyCode.Space))
         {
             
-            Collect();
+            Party();
 
         }
     }
 
-    public void Collect()
+    public void Party()
     {
-
-        collectParticle.Play();
+        rayw.Raywizard();
+        
 
     }
 }
