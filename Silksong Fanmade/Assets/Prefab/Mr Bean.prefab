@@ -218,13 +218,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019272300488914985}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.9977397, y: -0.0665375, z: 0.0056567383, w: -0.0075066574}
+  m_LocalRotation: {x: 0.006981211, y: -0.004689956, z: -0.06661267, w: 0.99774355}
   m_LocalPosition: {x: 0.393, y: 0.89100003, z: -0.79200006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3191708461566923353}
-  m_LocalEulerAnglesHint: {x: -180.901, y: 0.58999634, z: -7.626007}
+  m_LocalEulerAnglesHint: {x: -180.762, y: 179.41, z: -187.643}
 --- !u!198 &1026665804385786562
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -856,15 +856,15 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 10
+    type: 0
     angle: 65.43399
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 0
+    radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Position: {x: -0.13462643, y: -0.09083042, z: 0.25063425}
+    m_Rotation: {x: 80.37708, y: 107.736435, z: 107.97339}
+    m_Scale: {x: 1.0000032, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -943,7 +943,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.14926866
+      value: 0.27521285
       mode: 0
       spread: 0
       speed:
@@ -3887,7 +3887,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     type: 1
     collisionMode: 0
@@ -5915,8 +5915,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3046587, y: 2, z: 1.2698545}
-  m_Center: {x: 0.15232936, y: 0, z: -1.4052365}
+  m_Size: {x: 1.3046587, y: 3.0615816, z: 1.2698545}
+  m_Center: {x: 0.15232933, y: 0.5307908, z: -1.4052365}
 --- !u!114 &7628530128959388623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5929,12 +5929,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac378824ee6e224cb9fb243183577d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 50
+  topEmptyObject: {fileID: 0}
+  forwardOffset: 1
+  rayLength: 30
   targetLayer:
     serializedVersion: 2
-    m_Bits: 1
-  lastHit: {x: 0, y: 0, z: 0}
-  particula: {fileID: 6452802434926742098}
+    m_Bits: 4294967295
   impacto: {fileID: 1026665804385786562}
 --- !u!1 &5435387771867281344
 GameObject:
