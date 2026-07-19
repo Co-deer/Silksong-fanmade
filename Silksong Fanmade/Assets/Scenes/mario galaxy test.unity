@@ -335,6 +335,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mr Bean Pegajoso
       objectReference: {fileID: 0}
+    - target: {fileID: 7734309759408916925, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734309759408916925, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00287
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734309759408916925, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00203
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
