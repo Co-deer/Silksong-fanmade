@@ -13,9 +13,17 @@ public class Animattack : MonoBehaviour
     }
     void Update()
     {
+        if (anim != null)
+        {
+            
+            
+        
+            
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetTrigger("Attack");
+        }
+
         }
     }
 }
