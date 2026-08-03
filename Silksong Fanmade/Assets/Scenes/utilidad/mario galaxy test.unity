@@ -293,15 +293,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3191708461566923353, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.33
+      value: 0.965
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.51205873
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
       propertyPath: m_LocalRotation.w
@@ -331,25 +331,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4551549277001927475, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 4913450393251829548, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
       propertyPath: m_Name
       value: Mr Bean Pegajoso
-      objectReference: {fileID: 0}
-    - target: {fileID: 7734309759408916925, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.00135
-      objectReference: {fileID: 0}
-    - target: {fileID: 7734309759408916925, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00287
-      objectReference: {fileID: 0}
-    - target: {fileID: 7734309759408916925, guid: 18d98528f1a39ca4fa12f0456966de09, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.00203
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -456,7 +440,7 @@ Transform:
   m_GameObject: {fileID: 1269837632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.52, y: 3.5959182, z: 0.73600954}
+  m_LocalPosition: {x: -0.27999973, y: -0.41408193, z: -0.5641404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -563,7 +547,7 @@ Transform:
   m_GameObject: {fileID: 1590432773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.25654247, w: 0.966533}
-  m_LocalPosition: {x: -18.61, y: 2.83, z: 0.86015}
+  m_LocalPosition: {x: -9.37, y: -1.18, z: -0.44}
   m_LocalScale: {x: 5.1631, y: 5.1631, z: 5.1631}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -670,7 +654,7 @@ Transform:
   m_GameObject: {fileID: 1685307429}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70710695, w: 0.7071067}
-  m_LocalPosition: {x: -3.41, y: -4.38, z: 0.86015}
+  m_LocalPosition: {x: 5.830001, y: -8.39, z: -0.43999994}
   m_LocalScale: {x: 5.1631, y: 5.1631, z: 5.1631}
   m_ConstrainProportionsScale: 0
   m_Children: []
