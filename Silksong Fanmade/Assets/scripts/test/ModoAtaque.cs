@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ModoAtaque : MonoBehaviour
+{
+    public Transform Player;
+    [SerializeField] raycaster rayw;
+    private void OnEnable()
+    {      
+        // hacer animacion de ataque
+
+        // quitarle vida al chapulote
+
+        // activar particulas de daño 
+        rayw.Raywizard();
+        Debug.Log("me mataste noo");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //mirar al player
+        transform.LookAt(Player);
+    }
+
+    
+
+
+}
