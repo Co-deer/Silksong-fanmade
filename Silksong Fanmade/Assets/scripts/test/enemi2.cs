@@ -29,6 +29,7 @@ public void Update()
         {
             maquinaDeEstados.ActivarEstado(maquinaDeEstados.EstadoAtaque);
              Debug.Log("estado de ataque activado");
+             MoveSpeed = 0;
         }
 
     }

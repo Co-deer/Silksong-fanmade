@@ -6,8 +6,11 @@ public class ModoAtaque : MonoBehaviour
 {
     public Transform Player;
     [SerializeField] raycaster rayw;
+
+    private Rigidbody rb;
     private void OnEnable()
     {      
+        rb = GetComponent<Rigidbody>();
         // hacer animacion de ataque
 
         // quitarle vida al chapulote
@@ -22,6 +25,9 @@ public class ModoAtaque : MonoBehaviour
     {
         //mirar al player
         transform.LookAt(Player);
+
+    
+        
     }
 
     
