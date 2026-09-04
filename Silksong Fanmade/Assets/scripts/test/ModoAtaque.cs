@@ -6,7 +6,7 @@ public class ModoAtaque : MonoBehaviour
 {
     public Transform Player;
     [SerializeField] raycaster rayw;
-
+    [SerializeField] Hitpoints hp;
     private Rigidbody rb;
     private void OnEnable()
     {      
@@ -14,7 +14,7 @@ public class ModoAtaque : MonoBehaviour
         // hacer animacion de ataque
 
         // quitarle vida al chapulote
-
+        hp.ChangeHealth(-2);
         // activar particulas de daño 
         rayw.Raywizard();
         Debug.Log("me mataste noo");
