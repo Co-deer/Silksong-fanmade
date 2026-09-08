@@ -646,6 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1001796881}
+  - component: {fileID: 1001796882}
   m_Layer: 0
   m_Name: smite
   m_TagString: Untagged
@@ -669,6 +670,27 @@ Transform:
   - {fileID: 1572561947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1001796882
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001796880}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1017248559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1266,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504881338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb95b747f3f748d4a881082f7447b550, type: 3}
   m_Name: 
@@ -1262,6 +1284,8 @@ GameObject:
   - component: {fileID: 1572561947}
   - component: {fileID: 1572561946}
   - component: {fileID: 1572561945}
+  - component: {fileID: 1572561948}
+  - component: {fileID: 1572561949}
   m_Layer: 0
   m_Name: thunder
   m_TagString: Untagged
@@ -5170,13 +5194,14 @@ ParticleSystem:
   TriggerModule:
     enabled: 0
     serializedVersion: 2
-    inside: 1
-    outside: 0
-    enter: 0
-    exit: 0
-    colliderQueryMode: 0
-    radiusScale: 1
-    primitives: []
+    inside: 2
+    outside: 2
+    enter: 2
+    exit: 2
+    colliderQueryMode: 2
+    radiusScale: 5
+    primitives:
+    - {fileID: 1572561948}
   SubModule:
     serializedVersion: 2
     enabled: 1
@@ -6133,7 +6158,7 @@ Transform:
   m_GameObject: {fileID: 1572561944}
   serializedVersion: 2
   m_LocalRotation: {x: -0.52449566, y: -0, z: -0, w: -0.8514132}
-  m_LocalPosition: {x: -2.253552, y: 1.5333035, z: -2.8131547}
+  m_LocalPosition: {x: -4.5, y: 3.11, z: 0.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6141,6 +6166,40 @@ Transform:
   - {fileID: 299986938}
   m_Father: {fileID: 1001796881}
   m_LocalEulerAnglesHint: {x: -296.731, y: 0, z: 0}
+--- !u!114 &1572561948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572561944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7023172e00522074880e7befe6c1c328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 1840947229}
+--- !u!135 &1572561949
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572561944}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.18
+  m_Center: {x: 0.00008609891, y: 0.000020742418, z: 2.2974467}
 --- !u!1 &1723355345
 GameObject:
   m_ObjectHideFlags: 0
@@ -11279,6 +11338,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9246b5c5b712a1e478ea61c0dd7cb6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2108681056 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1869134779894840180, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
+  m_PrefabInstance: {fileID: 5940201091866423740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40779032eb756a04599870532496867e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138575886
 GameObject:
   m_ObjectHideFlags: 0
@@ -11443,6 +11513,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8550282390704517816, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
+      propertyPath: EstadoPersecucion
+      value: 
+      objectReference: {fileID: 2108681056}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

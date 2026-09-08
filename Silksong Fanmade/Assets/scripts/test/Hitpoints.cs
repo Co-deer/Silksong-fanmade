@@ -34,15 +34,13 @@ public void ChangeHealth(float amount) {
 
    // Fire off health change event.
    OnHealthChanged?.Invoke(this, oldHealth, currentHealth);
+
+   if (currentHealth <= 0)
+    {
+      Debug.Log("Te moriste");
+    }
 }
 
 // Test code
-void Update() {
-  if (Input.GetKeyDown(KeyCode.Q)) {
-    ChangeHealth(testHealAmount);
-  }
-  if (Input.GetKeyDown(KeyCode.E)) {
-    ChangeHealth(testDamageAmount);
-  }
-}
+
 }
