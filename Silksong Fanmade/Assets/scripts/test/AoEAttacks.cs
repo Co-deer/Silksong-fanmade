@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class AoEAttacks : MonoBehaviour
 {
-    [SerializeField] Hitpoints hp;
-    void OnCollision(Collider other) {
-        if(other.CompareTag("AoE")){
-            Debug.Log("Entered triggered with aoe");
-            hp.ChangeHealth(-5);
-        }
+    public bool isInBox;
+
+void Update(){
+    if(isInBox){
+        Debug.Log("Found in box!");
+    } else {
+        Debug.Log("Not in box!");
     }
+}
+
+void OnTriggerStay(Collider other){
+    if(other.CompareTag("Player"))
+    {
+        isInBox = true;
+    }
+}
+void OnTriggerExit(Collider other){
+    if(other.CompareTag("Player")){
+        isInBox = false;
+    }
+}
 }
