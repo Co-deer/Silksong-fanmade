@@ -6373,7 +6373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1342571741}
-  rayw: {fileID: 2108681058}
+  rayw: {fileID: 1840947230}
   hp: {fileID: 1840947229}
 --- !u!54 &1561146876
 Rigidbody:
@@ -16420,6 +16420,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 500
   currentHealth: 500
+--- !u!114 &1840947230 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7628530128959388623, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
+  m_PrefabInstance: {fileID: 731875155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840947228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac378824ee6e224cb9fb243183577d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1888119038
 GameObject:
   m_ObjectHideFlags: 0
@@ -16545,17 +16556,6 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40779032eb756a04599870532496867e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2108681058 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2393383501543684553, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
-  m_PrefabInstance: {fileID: 5940201091866423740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac378824ee6e224cb9fb243183577d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2138575886
