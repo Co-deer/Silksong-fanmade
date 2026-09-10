@@ -8,9 +8,9 @@ public class AoEAttacks : MonoBehaviour
 
 void Update(){
     if(isInBox){
-        Debug.Log("Found in box!");
+       
     } else {
-        Debug.Log("Not in box!");
+        
     }
 }
 

@@ -21,12 +21,6 @@ float currentHealth;
 // Allow other scripts a readonly property to access current health
 public float CurrentHealth => currentHealth;
 
-// test values
-[SerializeField]
-float testHealAmount = 5f;
-[SerializeField]
-float testDamageAmount = -5f;
-
 public void ChangeHealth(float amount) {
    float oldHealth = currentHealth;
    currentHealth += amount;
@@ -37,10 +31,8 @@ public void ChangeHealth(float amount) {
 
    if (currentHealth <= 0)
     {
-      Debug.Log("Te moriste");
+      Destroy(this.gameObject);
     }
 }
-
-// Test code
 
 }
