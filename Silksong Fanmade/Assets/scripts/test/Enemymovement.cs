@@ -6,31 +6,34 @@ public class Enemymovement : MonoBehaviour
 {
     
 
-public float speed;
+public float speed = 0;
     
-public bool move = true;
+private bool move = true;
     
     void Update() 
     {
     
-    if (move) 
+    if (move == true) 
     {
+      
     // the values in the brackets are for " x, y, z " 
     transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime);
+        
     }
     }
 
     public void OnCollisionEnter(Collision col)
     {
-     if (col.gameObject.name == "player")
+     if (col.gameObject.CompareTag("Player"))
      {
         move = false;
+        
      }
     }
 
      public void OnCollisionExit(Collision col)
     {
-     if (col.gameObject.name == "player")
+     if (col.gameObject.CompareTag("Player"))
      {
          move = true;
      }

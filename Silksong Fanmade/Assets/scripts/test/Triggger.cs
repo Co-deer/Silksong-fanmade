@@ -6,6 +6,7 @@ public class Triggger : MonoBehaviour
 {
 
     [SerializeField] raycaster rayw; 
+    [SerializeField] Skill2 s2;
 
     void Update()
     {
@@ -13,11 +14,22 @@ public class Triggger : MonoBehaviour
         {
             Party();
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+           SecondParty();
+        }
     }
 
     public void Party()
     {
         rayw.Raywizard();
+
+    }
+
+     public void SecondParty()
+    {
+        s2.Raywizard();
 
     }
 }
