@@ -2,27 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Spawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
-    public GameObject[] objects;
+    public GameObject Enemy;
+    public float spawnRate = 2;
+    private float timer = 0;
 
-
-
-    private float tiempo;
-
-    
-        
-
-    
-
-    public void SpawnRandom()
+    // Start is called before the first frame update
+    void Start()
     {
-        Instantiate(objects[UnityEngine.Random.Range(0, objects.Length - 1)]);
+        InvokeRepeating(nameof(SpawnEnemys), 5f, 5f);
     }
 
-
-    private void Start()
+    // Update is called once per frame
+    void Update()
     {
-        InvokeRepeating(nameof(SpawnRandom), 5f, 5f);
+        
+    }
+
+    void SpawnEnemys()
+    {
+        Instantiate(Enemy, transform.position, transform.rotation);
     }
 }

@@ -6,14 +6,14 @@ public class Enemymovement : MonoBehaviour
 {
     
 
-public float speed = 0;
+public float speed = 1;
     
 private bool move = true;
     
-    void Update() 
+    void Start() 
     {
     
-    if (move == true) 
+    if (move) 
     {
       
     // the values in the brackets are for " x, y, z " 
