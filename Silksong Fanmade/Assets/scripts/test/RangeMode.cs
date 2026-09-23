@@ -23,8 +23,9 @@ public class RangeMode : MonoBehaviour
 
             Rigidbody bullet = (Rigidbody)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
             bullet.AddForce(transform.forward*bulletImpulse, ForceMode.Impulse);
-         
+
             Destroy (bullet.gameObject, 2);
+            
         }
 
 
@@ -37,7 +38,8 @@ public class RangeMode : MonoBehaviour
         if (onRange)
             transform.LookAt(player);
     }
- 
+
+    
 
 }
 

@@ -14,6 +14,7 @@ public int MinDist = 3;
 public void Start()
 {
     maquinaDeEstados = GetComponent<MaquinaDeEstados>();
+    
 }
 
 public void Update()

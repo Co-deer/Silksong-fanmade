@@ -9,7 +9,7 @@ public class raycaster : MonoBehaviour
     public float rayLength = 5.0f;     // How far down the ray goes
     public LayerMask targetLayer; // Filter which layers to hits
 
-    [SerializeField] Hitpoints hp;
+    HpEnemies hpp;
     Triggger particula;
      [SerializeField] ParticleSystem impacto = null;
      public void Raywizard()
@@ -28,7 +28,7 @@ public class raycaster : MonoBehaviour
         if (Physics.Raycast(origin, direction, out hit, rayLength, targetLayer))
         {
             
-            hp.ChangeHealth(-2);
+            hpp.ChangeHealth(-5);
             impacto.transform.position = hit.point;
             
 

@@ -5042,6 +5042,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!198 &190998359 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1026665804385786562, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
+  m_PrefabInstance: {fileID: 731875155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &242459149
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,11 +5782,15 @@ PrefabInstance:
     - target: {fileID: 7628530128959388623, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: hp
       value: 
-      objectReference: {fileID: 2108681049}
+      objectReference: {fileID: 2108681060}
     - target: {fileID: 7628530128959388623, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: impacto
       value: 
-      objectReference: {fileID: 90101854}
+      objectReference: {fileID: 190998359}
+    - target: {fileID: 7628530128959388623, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
+      propertyPath: targetLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6937,7 +6946,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504881338}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb95b747f3f748d4a881082f7447b550, type: 3}
   m_Name: 
@@ -17314,7 +17323,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 5940201091866423740}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516645893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9246b5c5b712a1e478ea61c0dd7cb6e6, type: 3}
   m_Name: 
@@ -17341,6 +17350,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac378824ee6e224cb9fb243183577d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2108681060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516645893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988d5f12a90a7254881f41cbf7db8d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 5
 --- !u!1 &2138575886
 GameObject:
   m_ObjectHideFlags: 0
@@ -17472,7 +17495,7 @@ PrefabInstance:
     - target: {fileID: 2393383501543684553, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
       propertyPath: hp
       value: 
-      objectReference: {fileID: 1840947229}
+      objectReference: {fileID: 0}
     - target: {fileID: 2621342191062839374, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
       propertyPath: m_Name
       value: Evil Beam
@@ -17534,6 +17557,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7362375672638628009, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362375672638628009, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
       propertyPath: maxHealth
       value: 10
       objectReference: {fileID: 0}
@@ -17556,7 +17583,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2621342191062839374, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2108681060}
   m_SourcePrefab: {fileID: 100100000, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

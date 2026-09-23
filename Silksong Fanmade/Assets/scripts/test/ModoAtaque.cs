@@ -8,7 +8,6 @@ public class ModoAtaque : MonoBehaviour
     [SerializeField] raycaster rayw;
     [SerializeField] Hitpoints hp;
     private Rigidbody rb;
-    Collider GetCollider;
     
     private void OnCollisionEnter(Collision collision)
     {
