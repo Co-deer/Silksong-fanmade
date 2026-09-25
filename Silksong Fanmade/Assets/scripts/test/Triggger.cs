@@ -12,25 +12,28 @@ public class Triggger : MonoBehaviour
     {
        if (Input.GetKeyDown(KeyCode.Space))
         {
-
-            Party();
+            //Party();
+            rayw.Raywizard();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-           SecondParty();
+           //SecondParty();
+           s2.Raywizard();
         }
     }
 
+    /*
     public void Party()
     {
         rayw.Raywizard();
 
     }
 
-     public void SecondParty()
+    public void SecondParty()
     {
         s2.Raywizard();
 
     }
+    */
 }

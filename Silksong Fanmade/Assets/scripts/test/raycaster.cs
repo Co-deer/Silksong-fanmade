@@ -11,9 +11,9 @@ public class raycaster : MonoBehaviour
 
     HpEnemies hpp;
     Triggger particula;
-     [SerializeField] ParticleSystem impacto = null;
-     public void Raywizard()
-    {
+    [SerializeField] ParticleSystem impacto = null;
+
+    public void Raywizard() {
         // 1. Define the origin and direction
         Vector3 origin = topEmptyObject.position + (transform.forward * forwardOffset);
         Vector3 direction = transform.TransformDirection(Vector3.down);
@@ -22,13 +22,14 @@ public class raycaster : MonoBehaviour
         RaycastHit hit;
         if (TryGetComponent<Collider>(out Collider col))
         {
-            origin.y += col.bounds.extents.y;
+            origin.y += col.bounds.extents.y; // Adjust origin to the top of the collider
         }
         // 3. Fire the raycast
         if (Physics.Raycast(origin, direction, out hit, rayLength, targetLayer))
         {
             
-            hpp.ChangeHealth(-5);
+            Debug.Log(hit.collider.name); 
+            //hpp.ChangeHealth(-5);
             impacto.transform.position = hit.point;
             
 
@@ -38,6 +39,11 @@ public class raycaster : MonoBehaviour
                 impacto.Play();
             }
             
+            if (hit.collider.TryGetComponent<HpEnemies>(out HpEnemies enemigo))
+            {
+                // Esto solo se ejecutará si el objeto realmente tiene el componente HpEnemies
+                enemigo.ChangeHealth(-5);
+            }
         }
     }
 }
