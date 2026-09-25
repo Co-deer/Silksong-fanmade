@@ -266,7 +266,6 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 1
-  hp: {fileID: 0}
   impacto: {fileID: 1509828885937778005}
 --- !u!114 &7362375672638628009
 MonoBehaviour:
@@ -282,8 +281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   currentHealth: 0
-  testHealAmount: 5
-  testDamageAmount: -5
 --- !u!114 &4015142749841212609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  move: 1
 --- !u!1 &3952248146426503029
 GameObject:
   m_ObjectHideFlags: 0

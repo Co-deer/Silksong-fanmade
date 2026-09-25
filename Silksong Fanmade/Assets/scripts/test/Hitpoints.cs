@@ -16,8 +16,7 @@ public delegate void HealthChangedHandler(object source, float oldHealth, float 
 public event HealthChangedHandler OnHealthChanged;
 
 // Show in inspector
-[SerializeField]
-float currentHealth;
+[SerializeField] float currentHealth;
 // Allow other scripts a readonly property to access current health
 public float CurrentHealth => currentHealth;
 

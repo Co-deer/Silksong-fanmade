@@ -28,7 +28,7 @@ public class Skill2: MonoBehaviour
         if (Physics.Raycast(origin, direction, out hit, dosRayLength, dosTargetLayer))
         {
             
-            dhp.ChangeHealth(-2);
+            
             dimpacto.transform.position = hit.point;
             
 

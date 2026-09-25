@@ -5,13 +5,14 @@ using UnityEngine;
 public class Triggger : MonoBehaviour
 {
 
-    [SerializeField] raycaster rayw; 
-    [SerializeField] Skill2 s2;
+    [SerializeField] raycaster rayw = null; 
+    [SerializeField] Skill2 s2 = null;
 
     void Update()
     {
        if (Input.GetKeyDown(KeyCode.Space))
         {
+
             Party();
         }
 

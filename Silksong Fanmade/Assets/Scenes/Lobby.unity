@@ -5677,7 +5677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.76
+      value: 0.774
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5685,7 +5685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.804
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 3191708461566923353, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5801,6 +5801,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4913450393251829548, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1840947231}
+    - targetCorrespondingSourceObject: {fileID: 4913450393251829548, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1840947233}
+    - targetCorrespondingSourceObject: {fileID: 4913450393251829548, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1840947232}
     - targetCorrespondingSourceObject: {fileID: 3766875769687014164, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 798552735}
@@ -17092,6 +17098,41 @@ MonoBehaviour:
     m_Bits: 4294967295
   dhp: {fileID: 2108681049}
   dimpacto: {fileID: 1728980925}
+--- !u!114 &1840947232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840947228}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e6762eea813db44b89b2803b192d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 1840947233}
+  hppp: {fileID: 0}
+--- !u!65 &1840947233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840947228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!1 &1856699547
 GameObject:
   m_ObjectHideFlags: 0
@@ -17323,7 +17364,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 5940201091866423740}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516645893}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9246b5c5b712a1e478ea61c0dd7cb6e6, type: 3}
   m_Name: 
@@ -17357,7 +17398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516645893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 988d5f12a90a7254881f41cbf7db8d40, type: 3}
   m_Name: 
@@ -17500,6 +17541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Evil Beam
       objectReference: {fileID: 0}
+    - target: {fileID: 2621342191062839374, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4015142749841212609, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
       propertyPath: move
       value: 1
@@ -17558,7 +17603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7362375672638628009, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7362375672638628009, guid: 79ad1023a1a7d824499aff0dee8cf1cd, type: 3}
       propertyPath: maxHealth
