@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject Enemy;
-    public float spawnRate = 2;
-    private float timer = 0;
+
+    
+    public GameObject enemy;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +17,17 @@ public class Spawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Awake()
     {
+        // Busca automáticamente el Prefab en Assets/Resources/EnemigoPrefab
+        enemy = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefab/enemigos/Evil Beam.prefab");
         
-    }
+        
+    }    
+    
 
     void SpawnEnemys()
     {
-        Instantiate(Enemy, transform.position, transform.rotation);
+        Instantiate(enemy, transform.position, transform.rotation);
     }
 }

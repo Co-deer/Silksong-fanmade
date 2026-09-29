@@ -9,7 +9,7 @@ public class Skill2: MonoBehaviour
     public float dosRayLength = 5.0f;     // How far down the ray goes
     public LayerMask dosTargetLayer; // Filter which layers to hits
 
-    [SerializeField] Hitpoints dhp;
+    
     Triggger particula;
      [SerializeField] ParticleSystem dimpacto = null;
      public void Raywizard()
@@ -37,7 +37,12 @@ public class Skill2: MonoBehaviour
             {
                 dimpacto.Play();
             }
-            
+
+            if (hit.collider.TryGetComponent<HpEnemies>(out HpEnemies enemigo))
+            {
+                // Esto solo se ejecutará si el objeto realmente tiene el componente HpEnemies
+                enemigo.ChangeHealth(-5);
+            }
         }
     }
 }

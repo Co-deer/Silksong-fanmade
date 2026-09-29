@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 2393383501543684553}
   - component: {fileID: 7362375672638628009}
   - component: {fileID: 4015142749841212609}
+  - component: {fileID: 5163901414482075706}
   m_Layer: 0
   m_Name: Evil Beam
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2621342191062839374}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.65014106, z: -0, w: 0.7598136}
+  m_LocalRotation: {x: 0, y: 0.65013784, z: -0, w: -0.7598163}
   m_LocalPosition: {x: 17.29, y: 1.814, z: 19.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -127,7 +128,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2621342191062839374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -176,7 +177,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2621342191062839374}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40779032eb756a04599870532496867e, type: 3}
   m_Name: 
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EstadoAtaque: {fileID: 1155351035000499374}
-  EstadoPersecucion: {fileID: 4015142749841212609}
+  EstadoPersecucion: {fileID: 1869134779894840180}
   EstadoInicial: {fileID: 7986119202177506735}
 --- !u!114 &7986119202177506735
 MonoBehaviour:
@@ -219,7 +220,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2621342191062839374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f1f1592bda0f634080d8213aefc24d9, type: 3}
   m_Name: 
@@ -274,14 +275,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2621342191062839374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9246b5c5b712a1e478ea61c0dd7cb6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  currentHealth: 0
+  maxHealth: 10
+  currentHealth: 10
 --- !u!114 &4015142749841212609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2621342191062839374}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317b2bd1554ee8546871de38b7ebb7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &5163901414482075706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,10 +304,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2621342191062839374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 317b2bd1554ee8546871de38b7ebb7d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 988d5f12a90a7254881f41cbf7db8d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  maxHealth: 5
+  currentHealth: 5
 --- !u!1 &3952248146426503029
 GameObject:
   m_ObjectHideFlags: 0

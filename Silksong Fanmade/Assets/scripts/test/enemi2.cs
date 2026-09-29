@@ -15,6 +15,7 @@ public void Start()
 {
     maquinaDeEstados = GetComponent<MaquinaDeEstados>();
     
+    Player = GameObject.FindGameObjectWithTag("Player").transform;
 }
 
 public void Update()
