@@ -4071,7 +4071,7 @@ ParticleSystem:
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 2
     inside: 1
     outside: 0
@@ -5035,12 +5035,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90101852}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.4233985, y: 3.483675, z: -3.270838}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.304, y: -1.3456964, z: 2.1100001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1001796881}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &190998359 stripped
 ParticleSystem:
@@ -5763,7 +5763,7 @@ PrefabInstance:
     - target: {fileID: 6452802434926742098, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: s2
       value: 
-      objectReference: {fileID: 1840947231}
+      objectReference: {fileID: 1840947230}
     - target: {fileID: 7312900890623616257, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -5817,7 +5817,7 @@ PrefabInstance:
       addedObject: {fileID: 1840947229}
     - targetCorrespondingSourceObject: {fileID: 4913450393251829548, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1840947231}
+      addedObject: {fileID: 1840947230}
     - targetCorrespondingSourceObject: {fileID: 3766875769687014164, guid: 05631edcb04dad24784b23920f7d668e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 798552735}
@@ -6365,6 +6365,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1572561947}
+  - {fileID: 90101855}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1001796882
@@ -12038,15 +12039,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572561944}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.52449566, y: -0, z: -0, w: -0.8514132}
-  m_LocalPosition: {x: -4.5, y: 3.11, z: 0.32}
+  m_LocalRotation: {x: -0.7305124, y: -0, z: -0, w: -0.68289953}
+  m_LocalPosition: {x: 12.93, y: 5.96, z: 9.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1728980923}
   - {fileID: 299986938}
   m_Father: {fileID: 1001796881}
-  m_LocalEulerAnglesHint: {x: -296.731, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -266.141, y: 0, z: 0}
 --- !u!114 &1572561948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17102,7 +17103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 500
   currentHealth: 500
---- !u!114 &1840947231
+--- !u!114 &1840947230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17114,13 +17115,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23d357030e010e74f9c66559c40d119e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topdosEmptyObject: {fileID: 575900770}
-  dosForwardOffset: 1
-  dosRayLength: 5
-  dosTargetLayer:
+  topEmptyObject: {fileID: 575900770}
+  rayLength: 5
+  targetLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
-  dimpacto: {fileID: 90101854}
+    m_Bits: 1
+  impacto: {fileID: 90101854}
 --- !u!1 &1856699547
 GameObject:
   m_ObjectHideFlags: 0
@@ -17560,5 +17560,4 @@ SceneRoots:
   - {fileID: 1001796881}
   - {fileID: 731875155}
   - {fileID: 5940201091866423740}
-  - {fileID: 90101855}
   - {fileID: 508276041}

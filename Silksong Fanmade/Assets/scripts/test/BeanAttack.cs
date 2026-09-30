@@ -5,7 +5,7 @@ using UnityEngine;
 public class BeanAttack : MonoBehaviour
 {
     
-    [SerializeField] Collider m_Collider = null;
+    [SerializeField] Collider m_Collider;
     [SerializeField] HpEnemies hppp;
 
     void Start()

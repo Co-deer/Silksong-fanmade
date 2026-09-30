@@ -5,35 +5,32 @@ using UnityEngine;
 public class Triggger : MonoBehaviour
 {
 
-    [SerializeField] raycaster rayw = null; 
-    [SerializeField] Skill2 s2 = null;
+    [SerializeField] raycaster rayw; 
+    [SerializeField] Skill2 s2;
 
     void Update()
     {
        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Party();
-            rayw.Raywizard();
+
+            Party();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-           //SecondParty();
-           s2.Raywizard();
+           SecondParty();
         }
     }
 
-    /*
     public void Party()
     {
         rayw.Raywizard();
 
     }
 
-    public void SecondParty()
+     public void SecondParty()
     {
-        s2.Raywizard();
+        s2.Effect();
 
     }
-    */
 }

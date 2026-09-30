@@ -29,7 +29,7 @@ public class raycaster : MonoBehaviour
         {
             
             Debug.Log(hit.collider.name); 
-            //hpp.ChangeHealth(-5);
+            
             impacto.transform.position = hit.point;
             
 

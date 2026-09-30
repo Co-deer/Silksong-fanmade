@@ -2,47 +2,68 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill2: MonoBehaviour
+public class Skill2 : MonoBehaviour
 {
-    public Transform topdosEmptyObject;
-    public float dosForwardOffset = 1.0f; // Distance in front of the object
-    public float dosRayLength = 5.0f;     // How far down the ray goes
-    public LayerMask dosTargetLayer; // Filter which layers to hits
+    public Transform topEmptyObject;
+     // Distance in front of the object
+    public float rayLength = 5.0f;     // How far down the ray goes
+    public LayerMask targetLayer; // Filter which layers to hits
 
-    
+    HpEnemies hpp;
     Triggger particula;
-     [SerializeField] ParticleSystem dimpacto = null;
-     public void Raywizard()
-    {
+    [SerializeField] ParticleSystem impacto = null;
+
+    public void Effect() {
         // 1. Define the origin and direction
-        Vector3 origin = topdosEmptyObject.position + (transform.forward * dosForwardOffset);
+        Vector3 origin = topEmptyObject.position;
         Vector3 direction = transform.TransformDirection(Vector3.down);
 
         // 2. Variable to hold impact details
         RaycastHit hit;
         if (TryGetComponent<Collider>(out Collider col))
         {
-            origin.y += col.bounds.extents.y;
+            origin.y += col.bounds.extents.y; // Adjust origin to the top of the collider
         }
         // 3. Fire the raycast
-        if (Physics.Raycast(origin, direction, out hit, dosRayLength, dosTargetLayer))
+        if (Physics.Raycast(origin, direction, out hit, rayLength))
         {
             
+            Debug.Log(hit.collider.name); 
             
-            dimpacto.transform.position = hit.point;
+            impacto.transform.position = hit.point;
             
 
             // 4. Play the particle system
-            if (!dimpacto.isPlaying)
+            if (!impacto.isPlaying)
             {
-                dimpacto.Play();
+                impacto.Play();
             }
-
-            if (hit.collider.TryGetComponent<HpEnemies>(out HpEnemies enemigo))
+            
+            if (hit.collider.TryGetComponent<Hitpoints>(out Hitpoints player))
             {
                 // Esto solo se ejecutará si el objeto realmente tiene el componente HpEnemies
-                enemigo.ChangeHealth(-5);
+                player.ChangeHealth(+5);
             }
         }
     }
 }
+        
+        
+      
+
+       
+        
+       
+        
+            
+            
+           
+            
+
+            
+          
+            
+
+            
+        
+    
