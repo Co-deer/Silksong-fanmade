@@ -5,39 +5,35 @@ using UnityEngine;
 
 public class MouseAim : MonoBehaviour
 {
-   public float speed = 1.5f;
+    
+    
+    Plane plane;
+    private float fDist = 5.0f;
+    void Start ()
+    {
+       plane = new Plane(Vector3.forward, Vector3.zero);
+       
+	}
 
-    public Boolean interuptor = false;
-  private Vector3 target;
- [SerializeField] ParticleSystem impact = null;
-  void Start () {
-      target = transform.position;
-
-        impact.Play();
-  }
-  
-  void Update () {
-      if (Input.GetMouseButtonDown(0)) {
-        interuptor = true;
-        while(interuptor == true){
-        target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        target.z = transform.position.z;
-
-        impact.transform.position = target;
-        }
+    void Update ()
+    {
         
-      }
-        if(Input.GetMouseButtonUp(0))
-        {
-            interuptor = false;
+       if (Input.GetMouseButtonDown(0))
+       {
+        	Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+       	
+       		plane.Raycast (ray, out fDist); 
+
+       		transform.position = ray.GetPoint (fDist);
         }
-      transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-  }
+            
+       }
+
+        
+      
+       
+    }
 
 
 
-
-
-}
 

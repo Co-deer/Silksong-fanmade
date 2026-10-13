@@ -9,8 +9,7 @@ public class raycaster : MonoBehaviour
     public float rayLength = 5.0f;     // How far down the ray goes
     public LayerMask targetLayer; // Filter which layers to hits
 
-    HpEnemies hpp;
-    Triggger particula;
+    
     [SerializeField] ParticleSystem impacto = null;
 
     public void Raywizard() {

@@ -10,7 +10,7 @@ public class RangeMode : MonoBehaviour
 
     private bool onRange= false;
 
-    public Rigidbody projectile;
+    public GameObject projectile;
 
     void Start(){
         float rand = Random.Range (1.0f, 2.0f);
@@ -21,8 +21,8 @@ public class RangeMode : MonoBehaviour
 
         if (onRange){
 
-            Rigidbody bullet = (Rigidbody)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
-            bullet.AddForce(transform.forward*bulletImpulse, ForceMode.Impulse);
+            GameObject bullet = (GameObject)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
+            //bullet.AddForce(transform.forward*bulletImpulse, ForceMode.Impulse);
 
             Destroy (bullet.gameObject, 2);
             
