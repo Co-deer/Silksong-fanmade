@@ -6,7 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
    
     public float rotationSpeed = 10;
-    public float speed = 15f;
+    public float PlayerMoveSpeed = 15f;
 
     private Vector3 forward,right;
     void Start()
@@ -31,7 +31,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (direction.magnitude > 0.1f)
         {
             
-            transform.position += direction * speed * Time.deltaTime;
+            transform.position += direction * PlayerMoveSpeed * Time.deltaTime;
 
             Quaternion targetRotation = Quaternion.LookRotation(direction);
 

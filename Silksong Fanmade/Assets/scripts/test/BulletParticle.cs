@@ -7,7 +7,7 @@ public class BulletParticle : MonoBehaviour
 {
     public ParticleSystem parSystem;
 
-    public GameObject spark;
+    
 
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
 

@@ -16,13 +16,13 @@ public class RangeMode : MonoBehaviour
         float rand = Random.Range (1.0f, 2.0f);
         InvokeRepeating("Shoot", 2, rand);
     }
-
+        //bullet.AddForce(transform.forward*bulletImpulse, ForceMode.Impulse);
     void Shoot(){
 
         if (onRange){
 
             GameObject bullet = (GameObject)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
-            //bullet.AddForce(transform.forward*bulletImpulse, ForceMode.Impulse);
+            
 
             Destroy (bullet.gameObject, 2);
             
